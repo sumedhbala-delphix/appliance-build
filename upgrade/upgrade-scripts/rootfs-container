@@ -17,6 +17,8 @@
 
 . "${BASH_SOURCE%/*}/common.sh"
 
+turn_verbose_logging_on
+
 CONTAINER=
 
 function delete() {

@@ -17,6 +17,8 @@
 
 . "${BASH_SOURCE%/*}/common.sh"
 
+turn_verbose_logging_on
+
 IMAGE_PATH=$(get_image_path)
 [[ -n "$IMAGE_PATH" ]] || die "failed to determine image path"
 

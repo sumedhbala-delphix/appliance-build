@@ -18,6 +18,8 @@
 # shellcheck disable=SC1090
 . "${BASH_SOURCE%/*}/common.sh"
 
+turn_verbose_logging_on
+
 IMAGE_VERSION=$(get_image_version)
 [[ -n "$IMAGE_VERSION" ]] || die "failed to determine image version"
 

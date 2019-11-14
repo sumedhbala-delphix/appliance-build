@@ -204,3 +204,10 @@ function set_upgrade_property() {
 	source_upgrade_properties ||
 		die "failed to read properties file after setting '$1=$2'"
 }
+
+function turn_verbose_logging_on() {
+    exec 4> >(logger -t $0)
+    BASH_XTRACEFD="4"
+    PS4=':${BASH_SOURCE}:${LINENO}+'
+    set -x
+}
