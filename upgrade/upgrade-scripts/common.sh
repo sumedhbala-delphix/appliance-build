@@ -206,8 +206,8 @@ function set_upgrade_property() {
 }
 
 function turn_verbose_logging_on() {
-    exec 4> >(logger -t "$0")
-    BASH_XTRACEFD="4"
-    PS4=':${BASH_SOURCE}:${LINENO}+'
-    set -x
+	exec 4> >(logger -t "$0")
+	BASH_XTRACEFD="4"
+	PS4=':${BASH_SOURCE}:${LINENO}+'
+	set -x
 }
