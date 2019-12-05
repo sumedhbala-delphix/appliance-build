@@ -211,6 +211,5 @@ function turn_verbose_logging_on() {
 	#
 	exec 4> >(logger -t "$0")
 	BASH_XTRACEFD="4"
-	PS4=':${LINENO}+'
 	set -x
 }
