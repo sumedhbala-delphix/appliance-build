@@ -206,8 +206,11 @@ function set_upgrade_property() {
 }
 
 function turn_verbose_logging_on() {
+	#
+	# Verbose logging is available in /var/log/syslog on the Delphix Engine
+	#
 	exec 4> >(logger -t "$0")
 	BASH_XTRACEFD="4"
-	PS4=':${BASH_SOURCE}:${LINENO}+'
+	PS4=':${LINENO}+'
 	set -x
 }
