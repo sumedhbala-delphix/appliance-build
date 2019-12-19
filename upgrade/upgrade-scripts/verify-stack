@@ -17,8 +17,6 @@
 
 . "${BASH_SOURCE%/*}/common.sh"
 
-turn_verbose_logging_on
-
 STACK_STARTUP_MDS_SNAPNAME="MDS-CLONE-stack-startup-verify"
 
 function stack_startup_verify_cleanup() {
