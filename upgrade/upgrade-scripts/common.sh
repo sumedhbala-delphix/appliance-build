@@ -40,9 +40,6 @@ PROP_CURRENT_VERSION="com.delphix:current-version"
 PROP_INITIAL_VERSION="com.delphix:initial-version"
 
 #
-# 
-#
-#
 # To better enable root cause analysis of any upgrade failures, we
 # enable the "xtrace" feature here, and redirect that output to the
 # system log. This way, we can easily obtain a trace of the execution
