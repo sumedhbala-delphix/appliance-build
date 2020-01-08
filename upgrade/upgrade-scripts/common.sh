@@ -119,7 +119,7 @@ function copy_dataset_property_to_snapshots_recursive() {
 	local SRC_DATASET="$2"
 	local SNAPSHOT_NAME="$3"
 
-	for dir in $(zfs list -rH -o name $SRC_DATASET); do
+	for dir in $(zfs list -rH -o name "$SRC_DATASET"); do
 		copy_dataset_property "$PROP_NAME" \
 			"$dir" "$dir@$SNAPSHOT_NAME"
 	done
