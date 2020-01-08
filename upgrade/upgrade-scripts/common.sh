@@ -47,7 +47,7 @@ PROP_INITIAL_VERSION="com.delphix:initial-version"
 # analysis of a failure. Verbose logging is available in /var/log/syslog
 # on the Delphix Engine
 #
-exec 4> >(logger -t "upgrade-scripts:$(basename $0)" --id=$$)
+exec 4> >(logger -t "upgrade-scripts:$(basename "$0")" --id=$$)
 BASH_XTRACEFD="4"
 PS4='${BASH_SOURCE[0]}:${FUNCNAME[0]}:${LINENO[0]} '
 set -o xtrace
